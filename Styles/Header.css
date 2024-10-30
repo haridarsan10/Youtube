@@ -1,0 +1,163 @@
+.Header{
+  background-color: white;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  
+}
+
+.leftsection{
+display: flex;
+align-items: center;
+
+}
+
+.middlesection{
+flex: 1;
+display: flex;
+align-items: center;
+margin-left: 70px;
+margin-right: 35px;
+max-width: 600px;
+}
+
+.endsection{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.Hamburger{
+  height: 24px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+.Youtube{
+  height: 20px;
+}
+
+.Searchbar{
+height: 35px;
+flex: 1;
+border: solid;
+border-color: rgb(175, 175, 175);
+border-width: 1px;
+transition:border-color 0.15s ;
+
+}
+
+.Searchbar:focus{
+  border-color: blue;
+  outline: none;
+}
+
+.Searchbar::placeholder{
+  font-family: Roboto , Arial;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.Searchbutton{
+height: 39px;
+width: 70px;
+border: solid;
+border-width: 1px;
+border-color: rgb(175, 175, 175);
+border-left-color: none;
+}
+
+.Searchbutton,.VoiceSearchbutton,.createsection,.Menusection,.Notificationicon{
+  position: relative;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.Searchbutton .tooltip,.VoiceSearchbutton .tooltip,.createsection .tooltip,.Menusection .tooltip,.Notificationicon .tooltip{
+  position: absolute;
+  font-family: Roboto,Arial;
+  background-color: gray;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 1px;
+  bottom: -25px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.Searchbutton:hover .tooltip,.VoiceSearchbutton:hover .tooltip,.createsection:hover .tooltip,.Menusection:hover .tooltip,.Notificationicon:hover .tooltip{
+  opacity: 1;
+}
+
+.VoiceSearchbutton{
+  background-color: rgb(234, 232, 232);
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+}
+
+.Voiceicon{
+  height: 20px;
+}
+
+.Searchicon{
+  height: 30px;
+}
+
+.Create{
+  height: 25px;
+}
+
+.Menu{
+  height: 25px;
+}
+
+.Notification{
+  height: 25px;
+  padding-right: 2px;
+}
+
+.Account{
+  height: 25px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.Notificationicon{
+  position: relative;
+}
+
+.notificationpop{
+ position: absolute;
+ top: 0;
+ right: 0;
+ font-size: 10px;
+ color: white;
+ background-color: rgb(167, 6, 6);
+ font-family: Roboto ,Arial;
+ padding-left: 4px;
+ padding-right: 4px;
+ padding-top: 1px;
+ padding-bottom: 1px;
+ border-radius: 100%;
+ border: solid;
+ border-color: white;
+ border-width: 1px;
+}
